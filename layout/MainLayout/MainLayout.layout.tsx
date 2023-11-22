@@ -7,12 +7,7 @@ interface Props {
 }
 
 export const MainLayout: FC<Props> = ({ children }) => {
-  return (
-    <Container>
-      <HeaderWithNav />
-      {children}
-    </Container>
-  );
+  return <Container>{children}</Container>;
 };
 
 export default MainLayout;
