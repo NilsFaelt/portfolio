@@ -20,13 +20,11 @@ export const VideoBackground: FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    setTimeout(() => {
-      if (videoRef.current) {
-        videoRef.current.play().catch((error) => {
-          console.error("Autoplay error:", error);
-        });
-      }
-    }, 1000);
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error("Autoplay error:", error);
+      });
+    }
   }, []);
 
   return (
@@ -34,7 +32,7 @@ export const VideoBackground: FC = () => {
       <NavContainer>
         <Nav />
       </NavContainer>
-      <Video autoPlay muted loop ref={videoRef}>
+      <Video autoPlay loop muted playsInline ref={videoRef}>
         <source src='/test3.mp4' />
       </Video>
       <TitleContainer>
