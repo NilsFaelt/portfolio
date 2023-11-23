@@ -18,6 +18,9 @@ export const Text = styled.p`
   margin: 0;
   font-size: calc(0.4rem + 0.6vw);
   cursor: pointer;
+  &:hover {
+    color: yellow;
+  }
 `;
 export const Line = styled.div`
   width: calc(1.5rem + 2vw);

@@ -23,7 +23,7 @@ export const VideoBackground: FC = () => {
         <Nav />
       </NavContainer>
       <Video autoPlay muted loop>
-        <source src='/test.mp4' />
+        <source src='/test3.mp4' />
       </Video>
       <TitleContainer>
         <MainTitle />

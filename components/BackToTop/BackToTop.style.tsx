@@ -18,4 +18,8 @@ export const Container = styled.div`
   box-sizing: border-box;
   border-right: solid 0.05rem white;
   border-top: solid 0.05rem white;
+  &:hover {
+    border-right: solid 0.05rem yellow;
+    border-top: solid 0.05rem yellow;
+  }
 `;

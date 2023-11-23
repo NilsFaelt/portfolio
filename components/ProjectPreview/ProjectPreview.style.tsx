@@ -10,9 +10,8 @@ export const Container = styled.div<{ $imagesrc: string }>`
   gap: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  background-image: url(/images/${(props) => props.$imagesrc});
-  background-size: cover;
-  background-position: center;
+  border-right: solid 0.05rem white;
+  border-bottom: solid 0.05rem white;
   padding: 1rem;
   box-sizing: border-box;
 `;
@@ -35,8 +34,11 @@ export const LowerContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   max-width: 20rem;
+  @media (max-width: 497px) {
+    max-width: 15rem;
+    padding: 2rem;
+  }
 `;
 
 export const Image = styled.img`
@@ -57,6 +59,9 @@ export const StyledHref = styled.a`
   color: white;
   text-decoration: underline;
   cursor: pointer;
+  &:hover {
+    text-decoration: underline yellow;
+  }
 `;
 
 export const Text = styled.p`

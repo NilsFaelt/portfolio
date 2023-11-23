@@ -36,12 +36,12 @@ export const ProjectPreview: FC<Props> = ({ project }) => {
       <LowerContainer>
         <TextContainer>
           <Text>
-            BUILT WITH: <br /> {builtWith}
+            WHAT IS IT: <br /> {about}
           </Text>
         </TextContainer>
         <TextContainer>
           <Text>
-            WHAT IS IT: <br /> {about}
+            BUILT WITH: <br /> {builtWith}
           </Text>
         </TextContainer>
         <ImageContainer></ImageContainer>

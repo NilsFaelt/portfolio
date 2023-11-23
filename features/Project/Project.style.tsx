@@ -24,13 +24,16 @@ export const RightClickContainer = styled.div`
   height: 2.5rem;
   padding: 0.5rem;
   padding-right: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;
-
   border-right: solid 0.05rem white;
   border-bottom: solid 0.05rem white;
+  &:hover {
+    border-right: solid 0.05rem yellow;
+    border-bottom: solid 0.05rem yellow;
+  }
 `;
 export const LeftClickContainer = styled.div`
   display: flex;
@@ -45,7 +48,10 @@ export const LeftClickContainer = styled.div`
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;
-
   border-left: solid 0.05rem white;
   border-bottom: solid 0.05rem white;
+  &:hover {
+    border-left: solid 0.05rem yellow;
+    border-bottom: solid 0.05rem yellow;
+  }
 `;

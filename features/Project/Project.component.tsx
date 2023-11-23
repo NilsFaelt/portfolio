@@ -14,7 +14,8 @@ export const Project: FC<Props> = ({}) => {
     {
       name: "UNTRA STUDIO",
       about:
-        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
+        "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
+
       href: "https://untra-studio.webflow.io/placeholder",
       images: [
         "untra/one.png",
@@ -27,7 +28,7 @@ export const Project: FC<Props> = ({}) => {
     {
       name: "FANGO SOLUTION",
       about:
-        "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
+        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
       href: "https://fangosolutions.com/",
       images: [
         "fango/one.png",

@@ -29,4 +29,7 @@ export const StyledHref = styled.a`
   color: black;
   cursor: pointer;
   text-decoration: underline;
+  &:hover {
+    text-decoration: underline yellow;
+  }
 `;
