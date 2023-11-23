@@ -16,7 +16,7 @@ export const Project: FC<Props> = ({}) => {
       about:
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
 
-      href: "https://untra-studio.webflow.io/placeholder",
+      href: "https://untra-studio.webflow.io",
       images: [
         "untra/one.png",
         "untra/two.png",
@@ -52,7 +52,7 @@ export const Project: FC<Props> = ({}) => {
 
   return (
     <Container id='project'>
-      <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
+      <NavAside activeColor='black' color='black' sectionName='PROJECTS' />
 
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>

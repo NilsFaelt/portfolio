@@ -6,7 +6,7 @@ export const Container = styled.div<{ $imagesrc: string }>`
   justify-content: center;
   align-items: center;
   align-self: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   gap: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -15,7 +15,7 @@ export const Container = styled.div<{ $imagesrc: string }>`
   padding: 1rem;
   box-sizing: border-box;
   @media (max-width: 497px) {
-    gap: 0rem;
+    width: 20rem;
   }
 `;
 export const UpperContainer = styled.div`
