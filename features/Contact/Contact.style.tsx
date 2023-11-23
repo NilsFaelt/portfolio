@@ -36,3 +36,6 @@ export const StyledHref = styled.a`
     text-decoration: underline yellow;
   }
 `;
+export const StyledPhoneNumber = styled.span`
+  color: white;
+`;

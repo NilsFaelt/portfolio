@@ -11,3 +11,6 @@ export const Text = styled.p`
   margin: 0;
   text-align: center;
 `;
+export const StyledPhoneNumber = styled.span`
+  color: white;
+`;

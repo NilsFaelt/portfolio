@@ -17,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <meta name='format-detection' content='telephone=no' />
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <ProviderWrapper>{children}</ProviderWrapper>

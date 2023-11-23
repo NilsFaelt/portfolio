@@ -10,7 +10,7 @@ export const Contact = () => {
       <SectionTitle titleColor='black' text='CONTACT' />
       <TextContainer>
         <MainText color='black' text='MAIL: NilsFaelt@gmail.com' />
-        <MainText color='black' text='TEL: 0760698660' />
+        <MainText color='black' text='TEL: +46760698660' />
         <StyledHref href='mailto:nilsfalt@gmail.com'>Mail</StyledHref>
       </TextContainer>
       <TextContainer>
