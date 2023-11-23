@@ -14,6 +14,9 @@ export const Container = styled.div<{ $imagesrc: string }>`
   border-bottom: solid 0.05rem white;
   padding: 1rem;
   box-sizing: border-box;
+  @media (max-width: 497px) {
+    gap: 0rem;
+  }
 `;
 export const UpperContainer = styled.div`
   display: flex;
@@ -21,6 +24,10 @@ export const UpperContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
+  @media (max-width: 497px) {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
 `;
 export const LowerContainer = styled.div`
   display: flex;
@@ -28,16 +35,20 @@ export const LowerContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   background-color: rgba(0, 0, 0, 0);
+  @media (max-width: 497px) {
+    gap: 1rem;
+  }
 `;
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 20rem;
   @media (max-width: 497px) {
     max-width: 15rem;
-    padding: 2rem;
+    padding: 0rem;
   }
 `;
 
@@ -66,6 +77,5 @@ export const StyledHref = styled.a`
 
 export const Text = styled.p`
   color: white;
-
   text-align: center;
 `;

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useRef } from "react";
 import {
   Container,
   CopyWrightContainer,
@@ -17,12 +17,22 @@ export const VideoBackground: FC = () => {
     "Located in Stockholm and Halsingland Sweden ",
   ];
 
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error("Autoplay error:", error);
+      });
+    }
+  }, []);
+
   return (
     <Container>
       <NavContainer>
         <Nav />
       </NavContainer>
-      <Video autoPlay muted loop>
+      <Video autoPlay muted loop ref={videoRef}>
         <source src='/test3.mp4' />
       </Video>
       <TitleContainer>
