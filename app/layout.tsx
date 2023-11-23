@@ -1,9 +1,9 @@
 import StyledComponentsRegistry from "@/lib/registry";
 import { ProviderWrapper } from "@/provider";
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { Lato } from "next/font/google";
 
-const inter = Roboto_Mono({ subsets: ["latin"] });
+const inter = Lato({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nils Falt",

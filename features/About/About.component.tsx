@@ -1,10 +1,12 @@
 import React, { FC } from "react";
 import { Container, TextContainer } from "./About.style";
 import { MainText, SectionTitle } from "@/ui";
+import { NavAside } from "@/components";
 
 export const About: FC = () => {
   return (
     <Container id='about'>
+      <NavAside sectionName='ABOUT' color='black' />
       <SectionTitle text='ABOUT' titleColor='black' />
       <TextContainer $border='right'>
         <MainText text='With 3.5 years as a developer, specializing in front-end development, I graduated as a front-end developer and currently pursue IT security studies. Proficient in coding, I excel in crafting engaging interfaces and prioritize ongoing learning to bolster cybersecurity skills for comprehensive software development.' />

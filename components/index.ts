@@ -4,3 +4,6 @@ export * from "./Nav";
 export * from "./Section";
 export * from "./Footer";
 export * from "./BackToTop";
+export * from "./SvgLinkBar";
+export * from "./NavAside";
+export * from "./ProjectPreview";

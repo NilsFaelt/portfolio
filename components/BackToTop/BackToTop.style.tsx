@@ -16,6 +16,6 @@ export const Container = styled.div`
   cursor: pointer;
   color: white;
   box-sizing: border-box;
-  border-left: solid 0.05rem white;
-  border-bottom: solid 0.05rem white;
+  border-right: solid 0.05rem white;
+  border-top: solid 0.05rem white;
 `;
