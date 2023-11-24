@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        <meta name='theme-color' content='#FF0000' />
+        <meta name='theme-color' content='#000000' />
         <meta name='format-detection' content='telephone=no' />
       </head>
       <body className={inter.className}>

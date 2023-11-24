@@ -1,7 +1,11 @@
 import React from "react";
 import { Container } from "./Footer.style";
-import { CopyWrightContainer } from "../VideoBackground/VideoBackground.style";
+import {
+  CopyWrightContainer,
+  Video,
+} from "../VideoBackground/VideoBackground.style";
 import { CopywrightStyleTextSection } from "../CopywrightStyleTextSection";
+import { VideoBackground } from "..";
 
 export const Footer = () => {
   const descriptionArray = [
