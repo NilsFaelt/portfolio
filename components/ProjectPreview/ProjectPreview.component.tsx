@@ -8,6 +8,7 @@ import {
   ImageContainer,
   TextContainer,
   Text,
+  Title,
 } from "./ProjectPreview.style";
 import { MainText, SectionTitle } from "@/ui";
 
@@ -26,7 +27,7 @@ export const ProjectPreview: FC<Props> = ({ project }) => {
 
   return (
     <Container $imagesrc={imageSrc}>
-      <SectionTitle text={name} />
+      <Title>{name}</Title>
       <UpperContainer>
         <MainText text='VISIT WEBSITE' />
         <StyledHref target='_blank' href={href}>

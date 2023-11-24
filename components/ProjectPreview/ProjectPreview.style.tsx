@@ -79,3 +79,9 @@ export const Text = styled.p`
   color: white;
   text-align: center;
 `;
+export const Title = styled.h2`
+  font-size: calc(0.9rem + 0.6vw);
+  color: white;
+  margin: 0;
+  padding: 1rem;
+`;
