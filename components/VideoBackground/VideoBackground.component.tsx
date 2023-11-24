@@ -33,7 +33,7 @@ export const VideoBackground: FC = () => {
         <Nav />
       </NavContainer>
       <Video autoPlay loop muted playsInline ref={videoRef}>
-        <source src='/test3.mp4' />
+        <source src='/video/mainbg.mp4' />
       </Video>
       <TitleContainer>
         <MainTitle />

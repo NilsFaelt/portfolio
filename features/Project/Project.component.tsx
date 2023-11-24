@@ -26,7 +26,7 @@ export const Project: FC<Props> = ({}) => {
       builtWith: "WEBFLOW",
     },
     {
-      name: "FANGO SOLUTION",
+      name: "FANGO SOLUTIONS",
       about:
         "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
       href: "https://fangosolutions.com/",
