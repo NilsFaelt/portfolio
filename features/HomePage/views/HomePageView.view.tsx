@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Container } from "./HomePageView.style";
 import { Section, VideoBackground } from "@/components";
-import { About, Contact, Project } from "@/features";
+import { About, Contact, Experience, Project } from "@/features";
 
 export const HomePageView: FC = () => {
   return (
@@ -12,6 +12,9 @@ export const HomePageView: FC = () => {
       </Section>
       <Section>
         <Project />
+      </Section>
+      <Section>
+        <Experience />
       </Section>
       <Section>
         <Contact />

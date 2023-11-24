@@ -7,3 +7,4 @@ export * from "./BackToTop";
 export * from "./SvgLinkBar";
 export * from "./NavAside";
 export * from "./ProjectPreview";
+export * from "./EachExperience";

@@ -20,7 +20,7 @@ export const NavClickContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 22rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
   @media (max-width: 497px) {
     width: 20rem;
   }
@@ -38,8 +38,7 @@ export const RightClickContainer = styled.div`
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;
-  border-right: solid 0.05rem white;
-  border-bottom: solid 0.05rem white;
+
   background-color: rgba(0, 0, 0, 0.5);
   &:hover {
     border-right: solid 0.05rem yellow;
@@ -59,8 +58,7 @@ export const LeftClickContainer = styled.div`
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;
-  border-left: solid 0.05rem white;
-  border-bottom: solid 0.05rem white;
+
   &:hover {
     border-left: solid 0.05rem yellow;
     border-bottom: solid 0.05rem yellow;

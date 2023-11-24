@@ -22,6 +22,7 @@ export const NavAside: FC<Props> = ({
   const linkData = [
     { name: "ABOUT", anchorPoint: "string", id: "about" },
     { name: "PROJECTS", anchorPoint: "string", id: "project" },
+    { name: "EXPERIENCE", anchorPoint: "string", id: "experience" },
     { name: "CONTACT", anchorPoint: "string", id: "contact" },
   ];
   return (

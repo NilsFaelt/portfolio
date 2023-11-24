@@ -10,8 +10,7 @@ export const Container = styled.div<{ $imagesrc: string }>`
   gap: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  border-right: solid 0.05rem white;
-  border-bottom: solid 0.05rem white;
+
   padding: 1rem;
   box-sizing: border-box;
   @media (max-width: 497px) {
