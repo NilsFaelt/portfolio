@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <meta name='theme-color' content='#FF0000' />
       <meta name='format-detection' content='telephone=no' />
+      <link rel='manifest' href='../manifest.json' />
       <body className={inter.className}>
         <StyledComponentsRegistry>
           <ProviderWrapper>{children}</ProviderWrapper>
