@@ -52,8 +52,8 @@ export const Project: FC<Props> = ({}) => {
 
   return (
     <Container id='project'>
+      <SectionTitle text='PROJECTS' titleColor='black' />
       <NavAside activeColor='black' color='black' sectionName='PROJECTS' />
-
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>
         <LeftClickContainer onClick={handlePrevProject}>
