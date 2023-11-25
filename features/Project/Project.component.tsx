@@ -4,8 +4,9 @@ import {
   LeftClickContainer,
   NavClickContainer,
   RightClickContainer,
+  Title,
 } from "./Project.style";
-import { SectionTitle } from "@/ui";
+import { BigTitle, SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
 interface Props {}
 export const Project: FC<Props> = ({}) => {
@@ -52,8 +53,9 @@ export const Project: FC<Props> = ({}) => {
 
   return (
     <Container id='project'>
-      <SectionTitle text='PROJECTS' titleColor='black' />
-      <NavAside activeColor='black' color='black' sectionName='PROJECTS' />
+      <SectionTitle text='PROJECTS' titleColor='white' />
+      <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
+      <Title>{projects[project].name}</Title>
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>
         <LeftClickContainer onClick={handlePrevProject}>

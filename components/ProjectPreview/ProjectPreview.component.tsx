@@ -27,26 +27,12 @@ export const ProjectPreview: FC<Props> = ({ project }) => {
 
   return (
     <Container $imagesrc={imageSrc}>
-      <Title>{name}</Title>
+      {/* <Title>{name}</Title> */}
       <UpperContainer>
-        <MainText text='VISIT WEBSITE' />
         <StyledHref target='_blank' href={href}>
-          {name}
+          <MainText text='VISIT WEBSITE' />
         </StyledHref>
       </UpperContainer>
-      <LowerContainer>
-        <TextContainer>
-          <Text>
-            WHAT IS IT: <br /> {about}
-          </Text>
-        </TextContainer>
-        <TextContainer>
-          <Text>
-            BUILT WITH: <br /> {builtWith}
-          </Text>
-        </TextContainer>
-        <ImageContainer></ImageContainer>
-      </LowerContainer>
     </Container>
   );
 };

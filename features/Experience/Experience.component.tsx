@@ -1,7 +1,11 @@
 import React, { FC } from "react";
-import { Container, DisplayExperiencesContainer } from "./Experience.style";
+import {
+  Container,
+  DisplayExperiencesContainer,
+  Title,
+} from "./Experience.style";
 import { EachExperience, NavAside } from "@/components";
-import { SectionTitle } from "@/ui";
+import { BigTitle, SectionTitle } from "@/ui";
 
 export const Experience: FC = () => {
   return (
@@ -25,11 +29,12 @@ export const Experience: FC = () => {
           text='Freelance developer at Untra-studio, 6 months'
           skills='Webflow, CMS'
         />
-        <EachExperience
+        {/* <EachExperience
           text='3,5 years of Javascript development'
           skills='Typescript, React, nextJS, GIT, node, nest, postgreSQL, firebase, styled-components'
-        />
+        /> */}
       </DisplayExperiencesContainer>
+      <Title>IM NOT IN THE ◻︎</Title>
     </Container>
   );
 };

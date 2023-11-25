@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, StyledHref, TextContainer } from "./Contact.style";
-import { MainText, SectionTitle } from "@/ui";
+import { BigTitle, MainText, SectionTitle } from "@/ui";
 import { NavAside, SvgLinkBar } from "@/components";
 
 export const Contact = () => {
@@ -20,6 +20,7 @@ export const Contact = () => {
         />
         <MainText color='black' text='/Nils Fält' />
       </TextContainer>
+
       <SvgLinkBar />
     </Container>
   );
