@@ -4,6 +4,7 @@ import {
   LeftClickContainer,
   NavClickContainer,
   RightClickContainer,
+  StyledImage,
   Title,
 } from "./Project.style";
 import { BigTitle, SectionTitle } from "@/ui";
@@ -53,6 +54,12 @@ export const Project: FC<Props> = ({}) => {
 
   return (
     <Container id='project'>
+      <StyledImage
+        width={120}
+        height={120}
+        alt='yellow paint'
+        src={"/images/yellow.png"}
+      />
       <SectionTitle text='PROJECTS' titleColor='white' />
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
       <Title>{projects[project].name}</Title>

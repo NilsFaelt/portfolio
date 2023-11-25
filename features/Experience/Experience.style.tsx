@@ -22,16 +22,17 @@ export const DisplayExperiencesContainer = styled.div`
   flex-wrap: wrap;
   padding-top: 3rem;
   padding: 2rem;
-
+  background-color: black;
   margin-top: 3rem;
   gap: 1rem;
-  width: clamp(20rem, 80%, 80%);
+  width: clamp(20rem, 60%, 80%);
   /* border-bottom: 0.05rem solid white;
   border-right: 0.05rem solid white; */
   @media (max-width: 497px) {
     justify-content: flex-start;
     width: 17rem;
     padding: 0rem;
+    gap: 0rem;
   }
 `;
 export const Title = styled.h2`

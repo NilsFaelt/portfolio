@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -80,4 +81,9 @@ export const Title = styled.h2`
 `;
 export const Text = styled.p`
   font-size: cal(1rem + 5vw);
+`;
+export const StyledImage = styled(Image)`
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 `;
