@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import {
   Container,
   DisplayExperiencesContainer,
+  Span,
   Title,
 } from "./Experience.style";
 import { EachExperience, NavAside } from "@/components";
@@ -34,7 +35,9 @@ export const Experience: FC = () => {
           skills='Typescript, React, nextJS, GIT, node, nest, postgreSQL, firebase, styled-components'
         /> */}
       </DisplayExperiencesContainer>
-      <Title>IM NOT IN THE ◻︎</Title>
+      <Title>
+        IM NOT IN THE <Span>◻︎</Span>{" "}
+      </Title>
     </Container>
   );
 };

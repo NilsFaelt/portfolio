@@ -47,3 +47,6 @@ export const Title = styled.h2`
     text-align: center;
   }
 `;
+export const Span = styled.span`
+  color: yellow;
+`;
