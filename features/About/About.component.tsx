@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Container, TextContainer } from "./About.style";
+import { Container, Span, TextContainer, Title } from "./About.style";
 import { BigTitle, MainText, SectionTitle } from "@/ui";
 import { NavAside } from "@/components";
 
@@ -14,7 +14,9 @@ export const About: FC = () => {
       <TextContainer $border='left'>
         <MainText text='Crafting modern design using tools like React, Next.js, and cutting-edge CSS-in-JS techniques, I prioritize user-centric interfaces. Implementing security measures across backend systems with Node.js, Nest.js, and stringent API authentication assures robust protection, ensuring data integrity and user confidentiality in every aspect of development' />
       </TextContainer>
-      <BigTitle title='NILS FALT.' />
+      <Title>
+        NILS FALT<Span>.</Span>
+      </Title>
     </Container>
   );
 };

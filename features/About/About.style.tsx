@@ -36,3 +36,18 @@ export const AboutTitle = styled.h3`
   font-size: calc(0.9rem + 0.6vw);
   color: white;
 `;
+export const Title = styled.h2`
+  margin: 0;
+  margin-top: 1.5rem;
+  font-size: calc(3rem + 5vw);
+  text-align: center;
+  width: 80%;
+  color: white;
+  @media (max-width: 697px) {
+    font-size: calc(2rem + 7vw);
+    text-align: center;
+  }
+`;
+export const Span = styled.span`
+  color: yellow;
+`;
