@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Container, Span, TextContainer, Title } from "./About.style";
-import { BigTitle, MainText, SectionTitle } from "@/ui";
+import { MainText, SectionTitle } from "@/ui";
 import { NavAside } from "@/components";
 
 export const About: FC = () => {

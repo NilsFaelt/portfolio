@@ -48,5 +48,6 @@ export const Title = styled.h2`
   }
 `;
 export const Span = styled.span`
+  font-size: calc(3rem + 5vw);
   color: yellow;
 `;

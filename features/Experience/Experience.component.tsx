@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 import {
   Container,
   DisplayExperiencesContainer,
@@ -9,6 +9,24 @@ import { EachExperience, NavAside } from "@/components";
 import { BigTitle, SectionTitle } from "@/ui";
 
 export const Experience: FC = () => {
+  const [phrase, setPhrase] = useState("I'm not in the");
+  const words = ["place", "mood", "office", "mood", "zone"]; // Add your desired words here
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (index < words.length) {
+        setPhrase(`${phrase} ${words[index]}`);
+        setIndex(index + 1);
+      } else {
+        setTimeout(() => {
+          setPhrase("I'm not in the");
+          setIndex(0);
+        }, 5000); // Wait for 5 seconds before resetting the phrase
+      }
+    }, 1000); // Add a word every second
+
+    return () => clearInterval(interval);
+  }, [phrase, index, words]);
   return (
     <Container id='experience'>
       <SectionTitle titleColor='white' text='EXPERIENCE' />
@@ -30,10 +48,6 @@ export const Experience: FC = () => {
           text='Freelance developer at Untra-studio, 6 months'
           skills='Webflow, CMS'
         />
-        {/* <EachExperience
-          text='3,5 years of Javascript development'
-          skills='Typescript, React, nextJS, GIT, node, nest, postgreSQL, firebase, styled-components'
-        /> */}
       </DisplayExperiencesContainer>
       <Title>
         IM NOT IN THE <Span>◻︎</Span>{" "}
