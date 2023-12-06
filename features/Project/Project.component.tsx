@@ -42,6 +42,20 @@ export const Project: FC<Props> = ({}) => {
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
     },
+    {
+      name: "NEW DORKER",
+      about:
+        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
+      href: "https://melodious-speculoos-2fc810.netlify.app/",
+      images: [
+        "fango/one.png",
+        "fango/two.png",
+        "fango/three.png",
+        "fango/four.png",
+      ],
+      builtWith:
+        "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+    },
   ];
   const handleNextProject = () => {
     const nextProject = (project + 1) % projects.length; // Loop back to the first project when reaching the end
