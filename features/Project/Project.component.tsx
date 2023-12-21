@@ -11,7 +11,7 @@ import { BigTitle, SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
 interface Props {}
 export const Project: FC<Props> = ({}) => {
-  const [project, setProject] = useState(1);
+  const [project, setProject] = useState(0);
   const [displayImage, setDisplayImage] = useState(true);
   const projects = [
     {
