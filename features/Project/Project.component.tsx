@@ -29,6 +29,15 @@ export const Project: FC<Props> = ({}) => {
       builtWith: "WEBFLOW",
     },
     {
+      name: "SKEIDAR",
+      about:
+        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
+      href: "https://melodic-klepon-00edec.netlify.app",
+      images: [],
+      builtWith:
+        "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+    },
+    {
       name: "FANGO SOLUTIONS",
       about:
         "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
