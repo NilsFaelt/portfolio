@@ -32,7 +32,7 @@ export const Project: FC<Props> = ({}) => {
       name: "SKEIDAR",
       about:
         "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
-      href: "https://melodic-klepon-00edec.netlify.app",
+      href: "https://65841c432008210008deeea0--tubular-monstera-9d7aeb.netlify.app/",
       images: [],
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
