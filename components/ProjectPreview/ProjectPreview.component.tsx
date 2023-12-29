@@ -11,6 +11,7 @@ import {
   Title,
 } from "./ProjectPreview.style";
 import { MainText, SectionTitle } from "@/ui";
+import { SvgLinkBar } from "..";
 
 interface Props {
   project: {
@@ -19,11 +20,12 @@ interface Props {
     href: string;
     images: string[];
     builtWith: string;
+    gitHubUrl: string;
   };
 }
 export const ProjectPreview: FC<Props> = ({ project }) => {
   const [imageSrc, setImageSrc] = useState("");
-  const { name, href, images, builtWith, about } = project;
+  const { name, href, images, builtWith, about, gitHubUrl } = project;
 
   return (
     <Container $imagesrc={imageSrc}>
@@ -33,6 +35,7 @@ export const ProjectPreview: FC<Props> = ({ project }) => {
           <MainText text='VISIT WEBSITE' />
         </StyledHref>
       </UpperContainer>
+      <SvgLinkBar displayGitHub={true} gitHubUrl={gitHubUrl} />
     </Container>
   );
 };

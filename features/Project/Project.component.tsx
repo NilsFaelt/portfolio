@@ -7,7 +7,7 @@ import {
   StyledImage,
   Title,
 } from "./Project.style";
-import { BigTitle, SectionTitle } from "@/ui";
+import { SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
 interface Props {}
 export const Project: FC<Props> = ({}) => {
@@ -27,6 +27,7 @@ export const Project: FC<Props> = ({}) => {
         "untra/four.png",
       ],
       builtWith: "WEBFLOW",
+      gitHubUrl: "",
     },
     {
       name: "SKEIDAR",
@@ -36,6 +37,16 @@ export const Project: FC<Props> = ({}) => {
       images: [],
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+      gitHubUrl: "https://github.com/NilsFaelt/skediar",
+    },
+    {
+      name: "GOGO-TRAVEL",
+      about: "My travel blog",
+      href: "https://658e8b07a5b90800088c3465--earnest-taffy-aa7b42.netlify.app/",
+      images: [],
+      builtWith:
+        "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+      gitHubUrl: "https://github.com/NilsFaelt/travel-blog",
     },
     {
       name: "FANGO SOLUTIONS",
@@ -50,6 +61,7 @@ export const Project: FC<Props> = ({}) => {
       ],
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+      gitHubUrl: "https://github.com/NilsFaelt/fango-solutions-client",
     },
     {
       name: "NEW DORKER",
@@ -64,6 +76,7 @@ export const Project: FC<Props> = ({}) => {
       ],
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+      gitHubUrl: "https://github.com/NilsFaelt/the_new_dorker",
     },
   ];
   const handleNextProject = () => {
