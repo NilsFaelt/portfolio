@@ -42,7 +42,7 @@ export const Project: FC<Props> = ({}) => {
     {
       name: "GOGO-TRAVEL",
       about: "My travel blog",
-      href: "https://658e8b07a5b90800088c3465--earnest-taffy-aa7b42.netlify.app/",
+      href: "https://earnest-taffy-aa7b42.netlify.app/",
       images: [],
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
