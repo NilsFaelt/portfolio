@@ -6,7 +6,7 @@ import {
   Title,
 } from "./Experience.style";
 import { EachExperience, NavAside } from "@/components";
-import { BigTitle, SectionTitle } from "@/ui";
+import { SectionTitle } from "@/ui";
 
 export const Experience: FC = () => {
   const [phrase, setPhrase] = useState("I'm not in the");
@@ -33,12 +33,20 @@ export const Experience: FC = () => {
       <NavAside sectionName='EXPERIENCE' color='white' activeColor='white' />
       <DisplayExperiencesContainer>
         <EachExperience
+          text='Front-end-developer,  Hunker-Junker'
+          skills='Creating a website for for a restaurant built with nextJS, styled-components, TS, contenful and jest/react-testing-library'
+        />
+        <EachExperience
+          text='Freelance Fullstack developer,  Konstfack/Artist'
+          skills='Creating a fullstack applictaion for uploading voicerecordings to mongoDB with nextJS, multer and tailwind'
+        />
+        <EachExperience
           text='Studying IT-security at IT-university in Stockholm, 2 years '
           skills='Linux, Kali, AD, Pentesting, Network and security, Azure, GIT'
         />
         <EachExperience
           text='Fullstack developer 7 months internship at QTE'
-          skills='Javascript/Typescript, React, nextJS, GIT node, UX/UI, React-native, nest, HTML, css'
+          skills='Javascript/Typescript, React, nextJS, SQL, Docker GIT node, UX/UI, React-native, nest, HTML, css'
         />
         <EachExperience
           text='Graduated Front-end/app-developer, 2 year university '

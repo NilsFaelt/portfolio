@@ -13,6 +13,7 @@ export const Container = styled.div`
   min-height: 7rem;
   /* border-right: solid white;
   border-bottom: solid white; */
+  border-bottom: solid white;
   @media (max-width: 497px) {
     min-width: 16rem;
   }
@@ -20,6 +21,10 @@ export const Container = styled.div`
 
 export const Title = styled.h4`
   color: white;
+  margin: 0;
+`;
+export const Span = styled.span`
+  color: yellow;
   margin: 0;
 `;
 export const Text = styled.p`

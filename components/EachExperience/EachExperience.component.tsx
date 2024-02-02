@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Container, Title, Text } from "./EachExperience.style";
+import { Container, Title, Text, Span } from "./EachExperience.style";
 
 interface Props {
   text: string;
@@ -8,8 +8,13 @@ interface Props {
 export const EachExperience: FC<Props> = ({ text, skills }) => {
   return (
     <Container>
-      <Title>EXPERIENCE: {text}</Title>
-      <Text>SKILLS: {skills}</Text>
+      <Title>
+        <Span>EXPERIENCE:</Span> {text}
+      </Title>
+      <Text>
+        {" "}
+        <Span>SKILLS: </Span> {skills}
+      </Text>
     </Container>
   );
 };
