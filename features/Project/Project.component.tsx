@@ -48,21 +48,21 @@ export const Project: FC<Props> = ({}) => {
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
       gitHubUrl: "https://github.com/NilsFaelt/travel-blog",
     },
-    {
-      name: "FANGO SOLUTIONS",
-      about:
-        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
-      href: "https://fangosolutions.com/",
-      images: [
-        "fango/one.png",
-        "fango/two.png",
-        "fango/three.png",
-        "fango/four.png",
-      ],
-      builtWith:
-        "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
-      gitHubUrl: "https://github.com/NilsFaelt/fango-solutions-client",
-    },
+    // {
+    //   name: "FANGO SOLUTIONS",
+    //   about:
+    //     "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
+    //   href: "https://fangosolutions.com/",
+    //   images: [
+    //     "fango/one.png",
+    //     "fango/two.png",
+    //     "fango/three.png",
+    //     "fango/four.png",
+    //   ],
+    //   builtWith:
+    //     "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
+    //   gitHubUrl: "https://github.com/NilsFaelt/fango-solutions-client",
+    // },
     {
       name: "NEW DORKER",
       about:
