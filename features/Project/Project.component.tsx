@@ -20,14 +20,21 @@ export const Project: FC<Props> = ({}) => {
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
 
       href: "https://untra-studio.webflow.io",
-      images: [
-        "untra/one.png",
-        "untra/two.png",
-        "untra/three.png",
-        "untra/four.png",
-      ],
+      images: [],
       builtWith: "WEBFLOW",
       gitHubUrl: "",
+      displayGithub: false,
+    },
+    {
+      name: "HUNKER JUNKER",
+      about:
+        "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
+
+      href: "https://superb-pixie-65b580.netlify.app/",
+      images: [],
+      builtWith: "NextJS",
+      gitHubUrl: "",
+      displayGithub: false,
     },
     {
       name: "SKEIDAR",
@@ -47,36 +54,6 @@ export const Project: FC<Props> = ({}) => {
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
       gitHubUrl: "https://github.com/NilsFaelt/travel-blog",
-    },
-    // {
-    //   name: "FANGO SOLUTIONS",
-    //   about:
-    //     "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
-    //   href: "https://fangosolutions.com/",
-    //   images: [
-    //     "fango/one.png",
-    //     "fango/two.png",
-    //     "fango/three.png",
-    //     "fango/four.png",
-    //   ],
-    //   builtWith:
-    //     "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
-    //   gitHubUrl: "https://github.com/NilsFaelt/fango-solutions-client",
-    // },
-    {
-      name: "NEW DORKER",
-      about:
-        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
-      href: "https://melodious-speculoos-2fc810.netlify.app/",
-      images: [
-        "fango/one.png",
-        "fango/two.png",
-        "fango/three.png",
-        "fango/four.png",
-      ],
-      builtWith:
-        "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
-      gitHubUrl: "https://github.com/NilsFaelt/the_new_dorker",
     },
   ];
   const handleNextProject = () => {

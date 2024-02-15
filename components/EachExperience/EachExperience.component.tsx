@@ -3,9 +3,9 @@ import { Container, Title, Text, Span } from "./EachExperience.style";
 
 interface Props {
   text: string;
-  skills: string;
+  tools: string;
 }
-export const EachExperience: FC<Props> = ({ text, skills }) => {
+export const EachExperience: FC<Props> = ({ text, tools }) => {
   return (
     <Container>
       <Title>
@@ -13,7 +13,7 @@ export const EachExperience: FC<Props> = ({ text, skills }) => {
       </Title>
       <Text>
         {" "}
-        <Span>SKILLS: </Span> {skills}
+        <Span>PRIMARY TOOLS: </Span> {tools}
       </Text>
     </Container>
   );

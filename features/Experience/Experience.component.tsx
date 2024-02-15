@@ -33,28 +33,8 @@ export const Experience: FC = () => {
       <NavAside sectionName='EXPERIENCE' color='white' activeColor='white' />
       <DisplayExperiencesContainer>
         <EachExperience
-          text='Front-end-developer,  Hunker-Junker'
-          skills='Creating a website for for a restaurant built with nextJS, styled-components, TS, contenful and jest/react-testing-library'
-        />
-        <EachExperience
-          text='Freelance Fullstack developer,  Konstfack/Artist'
-          skills='Creating a fullstack applictaion for uploading voicerecordings to mongoDB with nextJS, multer and tailwind'
-        />
-        <EachExperience
-          text='Studying IT-security at IT-university in Stockholm, 2 years '
-          skills='Linux, Kali, AD, Pentesting, Network and security, Azure, GIT'
-        />
-        <EachExperience
-          text='Fullstack developer 7 months internship at QTE'
-          skills='Javascript/Typescript, React, nextJS, SQL, Docker GIT node, UX/UI, React-native, nest, HTML, css'
-        />
-        <EachExperience
-          text='Graduated Front-end/app-developer, 2 year university '
-          skills='Javascript/Typescript, React, nextJS, node, UX/UI, React-native,GIT, HTML, css'
-        />
-        <EachExperience
-          text='Freelance developer at Untra-studio, 6 months'
-          skills='Webflow, CMS'
+          text='With 4 years of experience as a TypeScript developer aiding startups in their beginnings, I stay updated daily with the latest technology to deliver cutting-edge solutions.'
+          tools='Javascript/Typescript, React, NextJs, Node/Nest/Express, SQL, Prisma, Firebase, GIT, Github, Docker, Kali,  CSS, HTML,  styled-components, tailwind, API, CMS'
         />
       </DisplayExperiencesContainer>
       <Title>

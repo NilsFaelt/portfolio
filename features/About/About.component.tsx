@@ -9,11 +9,11 @@ export const About: FC = () => {
       <NavAside sectionName='ABOUT' color='white' />
       <SectionTitle text='ABOUT' titleColor='white' />
       <TextContainer $border='right'>
-        <MainText text='With 3.5 years as a developer, specializing in front-end development, I graduated as a front-end developer and currently pursue IT security studies. Proficient in coding, I excel in crafting engaging interfaces and prioritize ongoing learning to bolster cybersecurity skills for comprehensive software development.' />
+        <MainText text='With 4 years of experience under my belt, Ive been instrumental in assisting companies during their inception phase, aiding them in building their technological infrastructure from the ground up. Specializing in UX/UI design and backend development with Node.js, Ive contributed to crafting exceptional user experiences and robust software solutions. My commitment to thorough testing ensures the reliability and stability of the applications I develop, setting them apart in the competitive market. Continuously evolving and adapting, I prioritize staying abreast of the latest cybersecurity measures to safeguard the integrity of the systems I help create.' />
       </TextContainer>
-      <TextContainer $border='left'>
-        <MainText text='Crafting modern design using tools like React, Next.js, and cutting-edge CSS-in-JS techniques, I prioritize user-centric interfaces. Implementing security measures across backend systems with Node.js, Nest.js, and stringent API authentication assures robust protection, ensuring data integrity and user confidentiality in every aspect of development' />
-      </TextContainer>
+      {/* <TextContainer $border='left'>
+        <MainText text='' />
+      </TextContainer> */}
       <Title>
         NILS FALT<Span>.</Span>
       </Title>

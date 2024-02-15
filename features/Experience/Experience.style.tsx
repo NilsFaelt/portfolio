@@ -24,6 +24,7 @@ export const DisplayExperiencesContainer = styled.div`
   padding: 2rem;
   background-color: black;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   gap: 1rem;
   width: clamp(20rem, 60%, 80%);
   /* border-bottom: 0.05rem solid white;

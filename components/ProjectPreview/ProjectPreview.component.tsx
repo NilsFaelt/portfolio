@@ -1,16 +1,6 @@
 import React, { FC, useState } from "react";
-import {
-  Container,
-  LowerContainer,
-  UpperContainer,
-  Image,
-  StyledHref,
-  ImageContainer,
-  TextContainer,
-  Text,
-  Title,
-} from "./ProjectPreview.style";
-import { MainText, SectionTitle } from "@/ui";
+import { Container, UpperContainer, StyledHref } from "./ProjectPreview.style";
+import { MainText } from "@/ui";
 import { SvgLinkBar } from "..";
 
 interface Props {
@@ -21,11 +11,20 @@ interface Props {
     images: string[];
     builtWith: string;
     gitHubUrl: string;
+    displayGithub?: boolean;
   };
 }
 export const ProjectPreview: FC<Props> = ({ project }) => {
   const [imageSrc, setImageSrc] = useState("");
-  const { name, href, images, builtWith, about, gitHubUrl } = project;
+  const {
+    name,
+    href,
+    images,
+    builtWith,
+    about,
+    gitHubUrl,
+    displayGithub = true,
+  } = project;
 
   return (
     <Container $imagesrc={imageSrc}>
@@ -35,7 +34,9 @@ export const ProjectPreview: FC<Props> = ({ project }) => {
           <MainText text='VISIT WEBSITE' />
         </StyledHref>
       </UpperContainer>
-      <SvgLinkBar displayGitHub={true} gitHubUrl={gitHubUrl} />
+      {/* {displayGithub && (
+        <SvgLinkBar displayGitHub={true} gitHubUrl={gitHubUrl} />
+      )} */}
     </Container>
   );
 };
