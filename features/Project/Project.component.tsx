@@ -30,7 +30,7 @@ export const Project: FC<Props> = ({}) => {
       about:
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
 
-      href: "https://superb-pixie-65b580.netlify.app/",
+      href: "wwww.hunkerjunker.se",
       images: [],
       builtWith: "NextJS",
       gitHubUrl: "",

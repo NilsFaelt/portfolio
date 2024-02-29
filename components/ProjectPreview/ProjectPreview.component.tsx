@@ -1,7 +1,6 @@
 import React, { FC, useState } from "react";
 import { Container, UpperContainer, StyledHref } from "./ProjectPreview.style";
 import { MainText } from "@/ui";
-import { SvgLinkBar } from "..";
 
 interface Props {
   project: {
