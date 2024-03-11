@@ -6,8 +6,12 @@ import { Lato } from "next/font/google";
 const inter = Lato({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nils Falt",
-  description: "Portfoliio by Nils Falt",
+  title: "Nils Falt - Portfolio",
+  description:
+    "Explore Nils Falt's portfolio showcasing JavaScript and TypeScript development projects.",
+  icons: {
+    icon: "/svg/logo.svg",
+  },
 };
 
 export default function RootLayout({
