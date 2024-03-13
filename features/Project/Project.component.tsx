@@ -15,6 +15,16 @@ export const Project: FC<Props> = ({}) => {
   const [displayImage, setDisplayImage] = useState(true);
   const projects = [
     {
+      name: "VANGOLION",
+      about: "My dream project",
+
+      href: "https://vangolion.com/",
+      images: [],
+      builtWith: "NextJs, Contentful",
+      gitHubUrl: "",
+      displayGithub: false,
+    },
+    {
       name: "UNTRA STUDIO",
       about:
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
