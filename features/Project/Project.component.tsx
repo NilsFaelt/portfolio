@@ -1,11 +1,13 @@
 import React, { FC, useState } from "react";
 import {
   Container,
+  DisplayContainer,
   LeftClickContainer,
   NavClickContainer,
   RightClickContainer,
   StyledImage,
   Title,
+  EachImage,
 } from "./Project.style";
 import { SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
@@ -92,6 +94,13 @@ export const Project: FC<Props> = ({}) => {
       <SectionTitle text='PROJECTS' titleColor='white' />
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
       <Title>{projects[project].name}</Title>
+      <DisplayContainer>
+        <video autoPlay loop muted style={{ width: "100%", height: "100%" }}>
+          <source src='video/pattern.mov' type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
+      </DisplayContainer>
+
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>
         <LeftClickContainer onClick={handlePrevProject}>

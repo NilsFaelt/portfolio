@@ -10,12 +10,28 @@ export const Container = styled.div`
   gap: 2rem;
   background-color: black;
   width: 100%;
+`;
+export const EachImage = styled(Image)`
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+`;
+export const DisplayContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 20%;
+  background-color: black;
+  /* border: solid white 0.05rem; */
 
-  @media (max-width: 497px) {
+  @media (max-width: 700px) {
+    width: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-left: 1.3rem;
   }
-  /* background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?q=80&w=2602&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center; */
 `;
 
 export const NavClickContainer = styled.div`
@@ -87,4 +103,7 @@ export const StyledImage = styled(Image)`
   position: absolute;
   right: 1rem;
   top: 1rem;
+  @media (max-width: 700px) {
+    display: none;
+  }
 `;
