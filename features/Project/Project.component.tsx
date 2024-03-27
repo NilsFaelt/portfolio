@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import {
   Container,
   DisplayContainer,
@@ -78,6 +78,15 @@ export const Project: FC<Props> = ({}) => {
     setProject(prevProject);
   };
 
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error("Autoplay error:", error);
+      });
+    }
+  }, []);
   return (
     <Container id='project'>
       {displayImage && (
@@ -95,7 +104,14 @@ export const Project: FC<Props> = ({}) => {
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
       <Title>{projects[project].name}</Title>
       <DisplayContainer>
-        <video autoPlay loop muted style={{ width: "100%", height: "100%" }}>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          ref={videoRef}
+          style={{ width: "100%", height: "100%" }}
+        >
           <source src='video/pattern.mov' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
