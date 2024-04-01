@@ -103,7 +103,7 @@ export const Project: FC<Props> = ({}) => {
       <SectionTitle text='PROJECTS' titleColor='white' />
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
       <Title>{projects[project].name}</Title>
-      <DisplayContainer>
+      {/* <DisplayContainer>
         <video
           autoPlay
           loop
@@ -115,7 +115,7 @@ export const Project: FC<Props> = ({}) => {
           <source src='video/pattern.mov' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
-      </DisplayContainer>
+      </DisplayContainer> */}
 
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>
