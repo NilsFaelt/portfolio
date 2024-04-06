@@ -5,7 +5,7 @@ export const MainTitle: FC<{ borderColor?: string }> = ({
   borderColor = "white",
 }) => {
   return (
-    <Container $bordercolor={borderColor}>
+    <Container>
       <Title>Nils Fält</Title>
       <Text>DEVELOPER</Text>
     </Container>

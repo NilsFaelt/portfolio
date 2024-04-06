@@ -31,6 +31,7 @@ export const TextContainer = styled.div<{ $border: string }>`
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: clamp(18rem, 70%, 50rem);
+  border-bottom: solid white 0.1rem;
 `;
 export const AboutTitle = styled.h3`
   font-size: calc(0.9rem + 0.6vw);

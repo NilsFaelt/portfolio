@@ -1,20 +1,20 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import {
   Container,
-  DisplayContainer,
   LeftClickContainer,
   NavClickContainer,
   RightClickContainer,
-  StyledImage,
   Title,
-  EachImage,
+  TitleContainer,
 } from "./Project.style";
 import { SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
+
 interface Props {}
+
 export const Project: FC<Props> = ({}) => {
   const [project, setProject] = useState(0);
-  const [displayImage, setDisplayImage] = useState(true);
+  const [animationKey, setAnimationKey] = useState(0); // State variable to control animation restart
   const projects = [
     {
       name: "VANGOLION",
@@ -27,7 +27,7 @@ export const Project: FC<Props> = ({}) => {
       displayGithub: false,
     },
     {
-      name: "UNTRA STUDIO",
+      name: "UNTRA-STUDIO",
       about:
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
 
@@ -38,7 +38,7 @@ export const Project: FC<Props> = ({}) => {
       displayGithub: false,
     },
     {
-      name: "HUNKER JUNKER",
+      name: "HUNKER-JUNKER",
       about:
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
 
@@ -68,14 +68,17 @@ export const Project: FC<Props> = ({}) => {
       gitHubUrl: "https://github.com/NilsFaelt/travel-blog",
     },
   ];
+
   const handleNextProject = () => {
-    const nextProject = (project + 1) % projects.length; // Loop back to the first project when reaching the end
+    const nextProject = (project + 1) % projects.length;
     setProject(nextProject);
+    setAnimationKey((prevKey) => prevKey + 1); // Increment animation key to trigger animation restart
   };
 
   const handlePrevProject = () => {
-    const prevProject = (project - 1 + projects.length) % projects.length; // Loop back to the last project when at the first one
+    const prevProject = (project - 1 + projects.length) % projects.length;
     setProject(prevProject);
+    setAnimationKey((prevKey) => prevKey + 1); // Increment animation key to trigger animation restart
   };
 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -86,37 +89,26 @@ export const Project: FC<Props> = ({}) => {
         console.error("Autoplay error:", error);
       });
     }
-  }, []);
+  }, [project]);
+
+  const splittedText = projects[project].name.split("");
+
   return (
     <Container id='project'>
-      {displayImage && (
-        <StyledImage
-          width={120}
-          height={120}
-          alt='yellow paint'
-          src={"/images/yellow.png"}
-          onError={() => {
-            setDisplayImage(false);
-          }}
-        />
-      )}
       <SectionTitle text='PROJECTS' titleColor='white' />
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
-      <Title>{projects[project].name}</Title>
-      {/* <DisplayContainer>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          ref={videoRef}
-          style={{ width: "100%", height: "100%" }}
-        >
-          <source src='video/pattern.mov' type='video/mp4' />
-          Your browser does not support the video tag.
-        </video>
-      </DisplayContainer> */}
-
+      <TitleContainer>
+        {splittedText.map((letter, i) => (
+          <Title
+            key={`${project}-${i}`} // Use a unique key for each letter to trigger animation restart
+            style={{
+              animationDelay: `${i * 100}ms`,
+            }}
+          >
+            {letter}
+          </Title>
+        ))}
+      </TitleContainer>
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>
         <LeftClickContainer onClick={handlePrevProject}>

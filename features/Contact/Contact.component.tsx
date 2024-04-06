@@ -16,7 +16,7 @@ export const Contact = () => {
       <TextContainer>
         <MainText
           color='black'
-          text='Im am located in Stockholm and Hälsingland but always eager to go to new places and meet colleagues and friends'
+          text='Creating smart and captivating solutions tailored to your needs.'
         />
         <MainText color='black' text='/Nils Fält' />
       </TextContainer>

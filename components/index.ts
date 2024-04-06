@@ -8,3 +8,4 @@ export * from "./SvgLinkBar";
 export * from "./NavAside";
 export * from "./ProjectPreview";
 export * from "./EachExperience";
+export * from "./BigTextAnimation";

@@ -1,5 +1,16 @@
 import Image from "next/image";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+const fadeIn = keyframes`
+  from {
+    margin-top:-1rem;
+
+    color:yellow;
+  }
+  to {
+
+    color:white;
+  }
+`;
 
 export const Container = styled.div`
   position: relative;
@@ -8,6 +19,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  background-color: black;
+  width: 100%;
+`;
+export const TitleContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
   background-color: black;
   width: 100%;
 `;
@@ -88,12 +108,12 @@ export const LeftClickContainer = styled.div`
 export const Title = styled.h2`
   margin: 0;
   margin-top: 1.5rem;
-  font-size: calc(3rem + 5vw);
+  font-size: calc(2rem + 4vw);
   text-align: center;
-  width: 80%;
   color: white;
+  animation: ${fadeIn} 0.5s ease-in-out forwards;
   @media (max-width: 697px) {
-    font-size: calc(2rem + 4vw);
+    font-size: calc(1.5rem + 2vw);
   }
 `;
 export const Text = styled.p`
