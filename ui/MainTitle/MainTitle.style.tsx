@@ -1,13 +1,13 @@
 import styled, { keyframes } from "styled-components";
 const shadowApearAnimation = keyframes`
   from {
+    box-shadow: 5.5rem 5.5rem 5.5rem black;
 
-    box-shadow: 0rem 0rem 0rem black;
   
 
   }
   to {
-    box-shadow: 0.5rem 0.5rem 0.5rem black;
+    box-shadow: 0rem 0rem 0rem black;
   
     
   }
@@ -15,14 +15,14 @@ const shadowApearAnimation = keyframes`
 const shadowApearAnimation2 = keyframes`
   from {
 
-    box-shadow: 0.5rem 0.5rem 0.5rem black;
-    
+  
+    box-shadow: 0rem 0rem 0rem black;
     
     
   }
   to {
-    box-shadow: 0rem 0rem 0rem black;
-  
+    
+    box-shadow: 5.5rem 5.5rem 5.5rem black;
     
   }
 `;
@@ -35,12 +35,10 @@ export const Container = styled.div`
   background-color: transparent;
   padding: 3rem;
   box-sizing: border-box;
-
-  box-shadow: 1rem 1rem 1rem black;
+  animation: ${shadowApearAnimation} 1.5s ease-in-out forwards;
   &:hover {
     animation: ${shadowApearAnimation2} 0.5s ease-in-out forwards;
   }
-  animation: ${shadowApearAnimation} 1.5s ease-in-out forwards;
 `;
 
 export const Title = styled.h1`
