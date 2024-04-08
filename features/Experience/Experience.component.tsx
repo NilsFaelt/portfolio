@@ -23,7 +23,7 @@ export const Experience: FC = () => {
       <NavAside sectionName='EXPERIENCE' color='white' activeColor='white' />
       <DisplayExperiencesContainer>
         <EachExperience
-          text='With 4 years of experience as a TypeScript developer aiding startups in their beginnings, I stay updated daily with the latest technology to deliver cutting-edge solutions.'
+          text='With 4 years of experience as a TypeScript developer, I stay updated daily with the latest technology to deliver cutting-edge solutions'
           tools='Javascript/Typescript, React, NextJs, Node/Nest/Express, SQL, Prisma, Firebase, GIT, Github, Docker, Kali,  CSS, HTML,  styled-components, tailwind, API, CMS'
         />
       </DisplayExperiencesContainer>
