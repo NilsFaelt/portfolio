@@ -100,9 +100,9 @@ export const Project: FC<Props> = ({}) => {
       <TitleContainer>
         {splittedText.map((letter, i) => (
           <Title
-            key={`${project}-${i}`} // Use a unique key for each letter to trigger animation restart
+            key={`${project}-${i}`}
             style={{
-              animationDelay: `${i * 100}ms`,
+              animationDelay: `${i * 50}ms`,
             }}
           >
             {letter}

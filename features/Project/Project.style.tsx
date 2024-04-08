@@ -2,7 +2,7 @@ import Image from "next/image";
 import styled, { keyframes } from "styled-components";
 const fadeIn = keyframes`
   from {
-    margin-top:-1rem;
+    margin-top:-0.5rem;
 
     color:yellow;
   }
@@ -44,12 +44,9 @@ export const DisplayContainer = styled.div`
   width: 30%;
   height: 20%;
   background-color: black;
-  /* border: solid white 0.05rem; */
-
   @media (max-width: 700px) {
     width: 80vw;
     grid-template-columns: repeat(2, 1fr);
-
     margin-left: 1.3rem;
   }
 `;

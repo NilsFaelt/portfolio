@@ -28,8 +28,8 @@ export const TextContainer = styled.div<{ $border: string }>`
   background-color: rgba(0, 0, 0, 0.6);
   padding-top: 3rem;
   padding: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: clamp(18rem, 70%, 50rem);
   border-bottom: solid white 0.1rem;
 `;

@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import React, { FC } from "react";
 import { Container, Letter, LetterYellow } from "./BigTextAnimation.style";
 
 type Props = {
