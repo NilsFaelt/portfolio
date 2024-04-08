@@ -3,9 +3,9 @@ import styled, { keyframes } from "styled-components";
 
 const slideInLeftAnimation = keyframes`
   from {
-    transform: rotate(0);
-    opacity:0;
-  width:0rem;
+  opacity:0;
+  margin-left:-5rem;
+
   }
   to {
  
@@ -22,5 +22,5 @@ export const ImageContainer = styled.div`
 export const StyledImage = styled(Image)`
   width: calc(3rem + 5vw);
   height: calc(3rem + 5vw);
-  animation: ${slideInLeftAnimation} 2s forwards;
+  animation: ${slideInLeftAnimation} 1s forwards;
 `;
