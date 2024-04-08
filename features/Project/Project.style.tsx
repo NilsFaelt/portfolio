@@ -32,6 +32,13 @@ export const TitleContainer = styled.div`
   background-color: black;
   width: 100%;
 `;
+export const SectionTitleContainer = styled.div`
+  margin-top: 3rem;
+  @media (max-width: 597px) {
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+  }
+`;
 export const EachImage = styled(Image)`
   background-size: contain;
   background-position: center;
@@ -124,4 +131,17 @@ export const StyledImage = styled(Image)`
   @media (max-width: 700px) {
     display: none;
   }
+`;
+export const LetterYellow = styled.span`
+  margin-left: 0.2rem;
+  font-size: calc(3rem + 5vw);
+  text-align: center;
+  color: yellow;
+  @media (max-width: 697px) {
+    font-size: calc(2rem + 7vw);
+    text-align: center;
+  }
+`;
+export const CopyWrightContainer = styled.div`
+  max-width: 70%;
 `;

@@ -1,5 +1,12 @@
 import React, { FC } from "react";
-import { Container, Title, Text, Span } from "./EachExperience.style";
+import {
+  Container,
+  Title,
+  Text,
+  Span,
+  TextContainer,
+} from "./EachExperience.style";
+import { MainText } from "@/ui";
 
 interface Props {
   text: string;
@@ -8,13 +15,12 @@ interface Props {
 export const EachExperience: FC<Props> = ({ text, tools }) => {
   return (
     <Container>
-      <Title>
-        <Span>EXPERIENCE:</Span> {text}
-      </Title>
-      <Text>
-        {" "}
-        <Span>PRIMARY TOOLS: </Span> {tools}
-      </Text>
+      <TextContainer>
+        <MainText text={text} />
+      </TextContainer>
+      <TextContainer>
+        <MainText text={tools} />
+      </TextContainer>
     </Container>
   );
 };

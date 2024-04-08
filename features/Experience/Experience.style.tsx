@@ -10,8 +10,7 @@ export const Container = styled.div`
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  /* background-image: url("https://images.unsplash.com/photo-1646549101199-4f96e60584e7?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add your background image URL */
-  background-size: cover; /* Adjust the image size */
+  background-size: cover; 
   background-position: center; Adjust the image position */
 `;
 export const DisplayExperiencesContainer = styled.div`
@@ -26,9 +25,8 @@ export const DisplayExperiencesContainer = styled.div`
   margin-top: 3rem;
   margin-bottom: 3rem;
   gap: 1rem;
-  width: clamp(20rem, 60%, 80%);
-  /* border-bottom: 0.05rem solid white;
-  border-right: 0.05rem solid white; */
+  width: clamp(16rem, 70%, 50rem);
+
   @media (max-width: 497px) {
     justify-content: flex-start;
     width: 17rem;
@@ -51,4 +49,7 @@ export const Title = styled.h2`
 export const Span = styled.span`
   font-size: calc(3rem + 5vw);
   color: yellow;
+`;
+export const CopywrightContainer = styled.div`
+  max-width: 70%;
 `;

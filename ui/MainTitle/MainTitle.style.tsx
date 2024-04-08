@@ -10,6 +10,7 @@ export const Container = styled.div<{ shadow: number; bgOpacitty: number }>`
   padding: 3rem;
   box-sizing: border-box;
   border-radius: 1rem;
+
   box-shadow: ${(props) => props.shadow}rem ${(props) => props.shadow}rem
     ${(props) => props.shadow}rem black;
   background-color: rgba(0, 0, 0, ${(props) => props.bgOpacitty});

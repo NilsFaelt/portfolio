@@ -1,32 +1,22 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { FC } from "react";
 import {
   Container,
   DisplayExperiencesContainer,
   Span,
   Title,
+  CopywrightContainer,
 } from "./Experience.style";
 import { EachExperience, NavAside } from "@/components";
 import { SectionTitle } from "@/ui";
+import { CopywrightStyleTextSection } from "@/components/CopywrightStyleTextSection";
 
 export const Experience: FC = () => {
-  const [phrase, setPhrase] = useState("I'm not in the");
-  const words = ["place", "mood", "office", "mood", "zone"]; // Add your desired words here
-  const [index, setIndex] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (index < words.length) {
-        setPhrase(`${phrase} ${words[index]}`);
-        setIndex(index + 1);
-      } else {
-        setTimeout(() => {
-          setPhrase("I'm not in the");
-          setIndex(0);
-        }, 5000); // Wait for 5 seconds before resetting the phrase
-      }
-    }, 1000); // Add a word every second
+  const descriptionArray = [
+    "Nils Fält: JavaScript/TypeScript developer skilled in React/Next.js, Node.js/Nest.js, and passionate about UX/UI.",
+    "Contact ® NilsFaelt@gmail.com tel: +46760698660",
+    "Located in Stockholm and Halsingland Sweden ",
+  ];
 
-    return () => clearInterval(interval);
-  }, [phrase, index, words]);
   return (
     <Container id='experience'>
       <SectionTitle titleColor='white' text='EXPERIENCE' />
@@ -40,6 +30,9 @@ export const Experience: FC = () => {
       <Title>
         IM NOT IN THE <Span>◻︎</Span>{" "}
       </Title>
+      <CopywrightContainer>
+        <CopywrightStyleTextSection descriptionArray={descriptionArray} />
+      </CopywrightContainer>
     </Container>
   );
 };

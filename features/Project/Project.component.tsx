@@ -6,9 +6,13 @@ import {
   RightClickContainer,
   Title,
   TitleContainer,
+  LetterYellow,
+  CopyWrightContainer,
+  SectionTitleContainer,
 } from "./Project.style";
 import { SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
+import { CopywrightStyleTextSection } from "@/components/CopywrightStyleTextSection";
 
 interface Props {}
 
@@ -18,7 +22,8 @@ export const Project: FC<Props> = ({}) => {
   const projects = [
     {
       name: "VANGOLION",
-      about: "My dream project",
+      about:
+        "This website showcases innovative artists and designers and is built with Next.js, Firebase, MongoDB, and Tailwind CSS",
 
       href: "https://vangolion.com/",
       images: [],
@@ -40,7 +45,7 @@ export const Project: FC<Props> = ({}) => {
     {
       name: "HUNKER-JUNKER",
       about:
-        "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
+        "A modern restaurant website built with Next.js, styled-components, Jest, and React Testing Library, offering an immersive dining experience with interactive menus.",
 
       href: "http://www.hunkerjunker.se",
       images: [],
@@ -51,7 +56,7 @@ export const Project: FC<Props> = ({}) => {
     {
       name: "SKEIDAR",
       about:
-        "An all-encompassing solution for managing bookmarks, analytics, and content, simplifying browsing while facilitating tracking of your online activities.",
+        "This purely showcases CSS, devoid of practical usage, demonstrating techniques, styles, and effects without integration or functionality.",
       href: "https://65841c432008210008deeea0--tubular-monstera-9d7aeb.netlify.app/",
       images: [],
       builtWith:
@@ -60,7 +65,8 @@ export const Project: FC<Props> = ({}) => {
     },
     {
       name: "GOGO-TRAVEL",
-      about: "My travel blog",
+      about:
+        "This page is designed for testing voice-driven interactions, focusing on exploring voice-controlled functionalities on the web",
       href: "https://earnest-taffy-aa7b42.netlify.app/",
       images: [],
       builtWith:
@@ -95,7 +101,9 @@ export const Project: FC<Props> = ({}) => {
 
   return (
     <Container id='project'>
-      <SectionTitle text='PROJECTS' titleColor='white' />
+      <SectionTitleContainer>
+        <SectionTitle text='PROJECTS' titleColor='white' />
+      </SectionTitleContainer>
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
       <TitleContainer>
         {splittedText.map((letter, i) => (
@@ -108,7 +116,13 @@ export const Project: FC<Props> = ({}) => {
             {letter}
           </Title>
         ))}
+        <LetterYellow>.</LetterYellow>
       </TitleContainer>
+      <CopyWrightContainer>
+        <CopywrightStyleTextSection
+          descriptionArray={[projects[project].about]}
+        />
+      </CopyWrightContainer>
       <ProjectPreview project={projects[project]} />
       <NavClickContainer>
         <LeftClickContainer onClick={handlePrevProject}>
