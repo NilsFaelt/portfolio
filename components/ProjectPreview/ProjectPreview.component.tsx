@@ -27,15 +27,11 @@ export const ProjectPreview: FC<Props> = ({ project }) => {
 
   return (
     <Container $imagesrc={imageSrc}>
-      {/* <Title>{name}</Title> */}
       <UpperContainer>
         <StyledHref target='_blank' href={href}>
           <MainText text='VISIT WEBSITE' />
         </StyledHref>
       </UpperContainer>
-      {/* {displayGithub && (
-        <SvgLinkBar displayGitHub={true} gitHubUrl={gitHubUrl} />
-      )} */}
     </Container>
   );
 };

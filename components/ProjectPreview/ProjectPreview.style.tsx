@@ -23,8 +23,6 @@ export const UpperContainer = styled.div`
   align-items: center;
   background-color: rgba(0, 0, 0, 0);
   @media (max-width: 497px) {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
   }
 `;
 export const LowerContainer = styled.div`

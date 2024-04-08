@@ -13,6 +13,7 @@ import {
 import { SectionTitle } from "@/ui";
 import { NavAside, ProjectPreview } from "@/components";
 import { CopywrightStyleTextSection } from "@/components/CopywrightStyleTextSection";
+import { DisplayImages } from "./components/DisplayImages";
 
 interface Props {}
 
@@ -26,7 +27,11 @@ export const Project: FC<Props> = ({}) => {
         "This website showcases innovative artists and designers and is built with Next.js, Firebase, MongoDB, and Tailwind CSS",
 
       href: "https://vangolion.com/",
-      images: [],
+      images: [
+        "/images/vangolion/one.png",
+        "/images/vangolion/two.png",
+        "/images/vangolion/three.png",
+      ],
       builtWith: "NextJs, Contentful",
       gitHubUrl: "",
       displayGithub: false,
@@ -37,7 +42,11 @@ export const Project: FC<Props> = ({}) => {
         "A contemporary website design integrating blogs and news articles, presenting a dynamic and engaging user experience for information dissemination.",
 
       href: "https://untra-studio-a70e4154f13a56e751482da6fa.webflow.io/",
-      images: [],
+      images: [
+        "/images/untra/one.png",
+        "/images/untra/two.png",
+        "/images/untra/four.png",
+      ],
       builtWith: "WEBFLOW",
       gitHubUrl: "",
       displayGithub: false,
@@ -48,7 +57,11 @@ export const Project: FC<Props> = ({}) => {
         "A modern restaurant website built with Next.js, styled-components, Jest, and React Testing Library, offering an immersive dining experience with interactive menus.",
 
       href: "http://www.hunkerjunker.se",
-      images: [],
+      images: [
+        "/images/hunker/one.png",
+        "/images/hunker/two.png",
+        "/images/hunker/three.png",
+      ],
       builtWith: "NextJS",
       gitHubUrl: "",
       displayGithub: false,
@@ -58,20 +71,14 @@ export const Project: FC<Props> = ({}) => {
       about:
         "This purely showcases CSS, devoid of practical usage, demonstrating techniques, styles, and effects without integration or functionality.",
       href: "https://65841c432008210008deeea0--tubular-monstera-9d7aeb.netlify.app/",
-      images: [],
+      images: [
+        "/images/skeidar/one.png",
+        "/images/skeidar/two.png",
+        "/images/skeidar/three.png",
+      ],
       builtWith:
         "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
       gitHubUrl: "https://github.com/NilsFaelt/skediar",
-    },
-    {
-      name: "GOGO-TRAVEL",
-      about:
-        "This page is designed for testing voice-driven interactions, focusing on exploring voice-controlled functionalities on the web",
-      href: "https://earnest-taffy-aa7b42.netlify.app/",
-      images: [],
-      builtWith:
-        "TypeScript, NextJS, Node, Nest, PostgreSQL, Firebase, Docker, Styled-Components",
-      gitHubUrl: "https://github.com/NilsFaelt/travel-blog",
     },
   ];
 
@@ -104,6 +111,7 @@ export const Project: FC<Props> = ({}) => {
       <SectionTitleContainer>
         <SectionTitle text='PROJECTS' titleColor='white' />
       </SectionTitleContainer>
+
       <NavAside activeColor='black' color='white' sectionName='PROJECTS' />
       <TitleContainer>
         {splittedText.map((letter, i) => (
@@ -118,6 +126,7 @@ export const Project: FC<Props> = ({}) => {
         ))}
         <LetterYellow>.</LetterYellow>
       </TitleContainer>
+      <DisplayImages imagesUrl={projects[project].images} />
       <CopyWrightContainer>
         <CopywrightStyleTextSection
           descriptionArray={[projects[project].about]}
