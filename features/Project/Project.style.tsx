@@ -21,6 +21,7 @@ export const Container = styled.div`
   gap: 2rem;
   background-color: black;
   width: 100%;
+  border-bottom: solid white 0.1rem;
 `;
 export const TitleContainer = styled.div`
   display: flex;

@@ -16,7 +16,8 @@ export const Container = styled.div`
   padding-left: 5rem;
   padding-right: 5rem;
   background-size: cover;
-  background-position: center; */
+  background-position: center;
+  border-bottom: solid white 0.1rem;
 `;
 
 export const TextContainer = styled.div<{ $border: string }>`
@@ -25,10 +26,10 @@ export const TextContainer = styled.div<{ $border: string }>`
   flex-direction: column;
   justify-contnet: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
+
   padding-top: 3rem;
   padding: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   margin-bottom: 1rem;
   width: clamp(18rem, 70%, 50rem);
   border-bottom: solid white 0.1rem;
