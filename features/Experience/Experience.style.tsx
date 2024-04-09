@@ -11,7 +11,6 @@ export const Container = styled.div`
   padding-top: 3rem;
   padding-bottom: 3rem;
   box-sizing: border-box;
-
   background-size: cover;
   background-position: center;
 `;

@@ -16,7 +16,7 @@ export const MainTitle: FC<{ borderColor?: string }> = ({
     };
   }, []);
   return (
-    <Container shadow={scrollValue / 50} bgOpacitty={scrollValue / 300}>
+    <Container shadow={scrollValue / 900} bgOpacitty={scrollValue / 800}>
       <Title>Nils Fält</Title>
       <Text>DEVELOPER</Text>
     </Container>

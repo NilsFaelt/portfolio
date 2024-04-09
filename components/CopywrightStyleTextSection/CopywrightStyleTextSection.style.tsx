@@ -10,7 +10,7 @@ export const Container = styled.div`
   max-width: 20rem;
   &:hover {
     transform: scale(1.7);
-    transition: transform 0.5s;
+    transition: transform 1.5s;
 
     @media (max-width: 597px) {
       width: 10rem;
