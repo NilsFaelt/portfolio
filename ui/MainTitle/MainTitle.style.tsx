@@ -12,7 +12,7 @@ export const Container = styled.div<{ shadow: number; bgOpacitty: number }>`
   border-radius: 1rem;
   box-shadow: ${(props) => props.shadow}rem ${(props) => props.shadow}rem
     ${(props) => props.shadow}rem black;
-  background-color: rgba(0, 0, 0, ${(props) => props.bgOpacitty});
+  background-color: rgba(0, 0, 0, 0);
 `;
 
 export const Title = styled.h1`

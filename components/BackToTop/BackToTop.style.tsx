@@ -11,10 +11,10 @@ export const Container = styled.div`
   width: 2.5rem;
   height: 2.5rem;
   padding-top: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   border: solid 0.05rem black;
   cursor: pointer;
-  color: white;
+  color: black;
   box-sizing: border-box;
   /* border-right: solid 0.05rem white;
   border-top: solid 0.05rem white; */

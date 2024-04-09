@@ -126,7 +126,7 @@ export const Project: FC<Props> = ({}) => {
         ))}
         <LetterYellow>.</LetterYellow>
       </TitleContainer>
-      <DisplayImages imagesUrl={projects[project].images} />
+
       <CopyWrightContainer>
         <CopywrightStyleTextSection
           descriptionArray={[projects[project].about]}

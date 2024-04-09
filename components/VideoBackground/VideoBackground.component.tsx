@@ -1,11 +1,5 @@
 import React, { FC, useEffect, useRef } from "react";
-import {
-  Container,
-  CopyWrightContainer,
-  NavContainer,
-  TitleContainer,
-  Video,
-} from "./VideoBackground.style";
+import { Container, Video } from "./VideoBackground.style";
 import { MainTitle } from "@/ui";
 import { Nav } from "..";
 import { CopywrightStyleTextSection } from "../CopywrightStyleTextSection";
@@ -29,18 +23,9 @@ export const VideoBackground: FC = () => {
 
   return (
     <Container>
-      <NavContainer>
-        <Nav />
-      </NavContainer>
       <Video autoPlay loop muted playsInline ref={videoRef}>
         <source src='/video/mainbg.mp4' />
       </Video>
-      <TitleContainer>
-        <MainTitle />
-      </TitleContainer>
-      <CopyWrightContainer>
-        <CopywrightStyleTextSection descriptionArray={descriptionArray} />
-      </CopyWrightContainer>
     </Container>
   );
 };

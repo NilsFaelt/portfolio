@@ -6,19 +6,19 @@ import { NavAside, SvgLinkBar } from "@/components";
 export const Contact = () => {
   return (
     <Container id='contact'>
-      <NavAside sectionName='CONTACT' color='black' activeColor='white' />
-      <SectionTitle titleColor='black' text='CONTACT' />
+      <NavAside sectionName='CONTACT' color='white' activeColor='white' />
+      <SectionTitle titleColor='white' text='CONTACT' />
       <TextContainer>
-        <MainText color='black' text='MAIL: NilsFaelt@gmail.com' />
-        <MainText color='black' text='TEL: +46760698660' />
+        <MainText color='white' text='MAIL: NilsFaelt@gmail.com' />
+        <MainText color='white' text='TEL: +46760698660' />
         <StyledHref href='mailto:nilsfalt@gmail.com'>Mail</StyledHref>
       </TextContainer>
       <TextContainer>
         <MainText
-          color='black'
+          color='white'
           text='Creating smart and captivating solutions tailored to your needs.'
         />
-        <MainText color='black' text='/Nils Fält' />
+        <MainText color='white' text='/Nils Fält' />
       </TextContainer>
 
       <SvgLinkBar />

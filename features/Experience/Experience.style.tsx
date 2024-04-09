@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  width: 100%;
+  background-color: transparent;
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-size: cover; 
-  background-position: center; Adjust the image position */
+  box-sizing: border-box;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-size: cover;
+  background-position: center;
 `;
 export const DisplayExperiencesContainer = styled.div`
   display: flex;
@@ -21,7 +24,7 @@ export const DisplayExperiencesContainer = styled.div`
   flex-wrap: wrap;
   padding-top: 3rem;
   padding: 2rem;
-  background-color: black;
+  background-color: transparent;
   margin-top: 3rem;
   margin-bottom: 3rem;
   gap: 1rem;

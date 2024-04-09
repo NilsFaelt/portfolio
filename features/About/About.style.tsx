@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: transparent;
   min-height: 100vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -17,7 +17,6 @@ export const Container = styled.div`
   padding-right: 5rem;
   background-size: cover;
   background-position: center;
-  border-bottom: solid white 0.1rem;
 `;
 
 export const TextContainer = styled.div<{ $border: string }>`

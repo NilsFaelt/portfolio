@@ -19,9 +19,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: black;
+  background-color: transparent;
   width: 100%;
-  border-bottom: solid white 0.1rem;
 `;
 export const TitleContainer = styled.div`
   display: flex;
@@ -29,7 +28,7 @@ export const TitleContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 0rem;
-  background-color: black;
+  background-color: transparent;
   width: 100%;
 `;
 export const SectionTitleContainer = styled.div`
@@ -64,6 +63,7 @@ export const NavClickContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   width: 22rem;
   margin-top: 0rem;
   @media (max-width: 497px) {
@@ -79,12 +79,11 @@ export const RightClickContainer = styled.div`
   height: 2.5rem;
   padding: 0.5rem;
   padding-right: 0.8rem;
-  background-color: black;
+  background-color: transparent;
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;
 
-  background-color: rgba(0, 0, 0, 0.5);
   &:hover {
     border-right: solid 0.05rem white;
     border-bottom: solid 0.05rem white;
@@ -99,7 +98,7 @@ export const LeftClickContainer = styled.div`
   height: 2.5rem;
   padding: 0.5rem;
   padding-left: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;

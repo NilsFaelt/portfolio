@@ -10,7 +10,7 @@ export const Container = styled.div<{ $imagesrc: string }>`
   gap: 1rem;
   margin-left: 2rem;
   margin-right: 2rem;
-
+  background-color: transparent;
   box-sizing: border-box;
   @media (max-width: 497px) {
     width: 20rem;
@@ -21,7 +21,7 @@ export const UpperContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   @media (max-width: 497px) {
   }
 `;
@@ -66,6 +66,7 @@ export const StyledHref = styled.a`
   color: white;
   text-decoration: underline;
   cursor: pointer;
+  background-color: transparent;
   &:hover {
     text-decoration: underline yellow;
   }

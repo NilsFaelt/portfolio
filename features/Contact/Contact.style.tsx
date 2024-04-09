@@ -1,23 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: transparent;
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-sizing: border-box;
+  padding-left: 5rem;
+  padding-right: 5rem;
   width: 100%;
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Add your background image URL */
-  background-size: cover; /* Adjust the image size */
-  background-position: center; /* Adjust the image position */
 `;
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.3);
   padding-top: 3rem;
   padding: 1rem;
   margin-top: 3rem;
@@ -29,7 +32,7 @@ export const TextContainer = styled.div`
   }
 `;
 export const StyledHref = styled.a`
-  color: black;
+  color: white;
   cursor: pointer;
   text-decoration: underline;
   &:hover {
