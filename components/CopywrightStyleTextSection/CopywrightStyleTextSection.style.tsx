@@ -5,7 +5,19 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  max-width: 20rem;
+  &:hover {
+    transform: scale(1.7);
+    transition: transform 0.5s;
+
+    @media (max-width: 597px) {
+      width: 10rem;
+    }
+  }
 `;
+
 export const Text = styled.p`
   font-size: 0.55rem;
   margin: 0;

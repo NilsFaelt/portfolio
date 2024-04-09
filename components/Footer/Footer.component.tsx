@@ -1,11 +1,12 @@
 import React from "react";
-import { Container } from "./Footer.style";
+import { Container, StyledImage } from "./Footer.style";
 import {
   CopyWrightContainer,
   Video,
 } from "../VideoBackground/VideoBackground.style";
 import { CopywrightStyleTextSection } from "../CopywrightStyleTextSection";
 import { VideoBackground } from "..";
+import Image from "next/image";
 
 export const Footer = () => {
   const descriptionArray = [
@@ -14,7 +15,14 @@ export const Footer = () => {
   ];
   return (
     <Container>
+      <StyledImage
+        width={100}
+        height={100}
+        alt='Logo of letter N'
+        src={"/svg/logo_white.svg"}
+      />
       <CopywrightStyleTextSection descriptionArray={descriptionArray} />
+      <div></div>
     </Container>
   );
 };

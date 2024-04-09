@@ -37,7 +37,7 @@ export const CopyWrightContainer = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  width: 80%;
+
   font-size: 3rem;
   background-color: rgba(0, 0, 0, 0);
   z-index: 3;
