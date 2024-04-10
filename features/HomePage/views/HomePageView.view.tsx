@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { Container } from "./HomePageView.style";
 import { Section, VideoBackground } from "@/components";
-import { About, Contact, Experience, Project } from "@/features";
-import { Landing } from "@/features/Landing";
+import { About, Contact, Experience, Project, Landing } from "@/features";
 
 export const HomePageView: FC = () => {
   return (
