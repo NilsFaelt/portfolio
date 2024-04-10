@@ -102,7 +102,6 @@ export const LeftClickContainer = styled.div`
   border: solid 0.05rem black;
   cursor: pointer;
   color: white;
-
   &:hover {
     border-left: solid 0.05rem white;
     border-bottom: solid 0.05rem white;
