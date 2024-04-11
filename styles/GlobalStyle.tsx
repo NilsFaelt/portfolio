@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { roboto_mono } from ".";
 
 export const GlobalStyle = createGlobalStyle`
   body {

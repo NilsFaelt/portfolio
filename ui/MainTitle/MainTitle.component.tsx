@@ -1,5 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { Container, Title, Text } from "./MainTitle.style";
+import { Oswald } from "next/font/google";
+const oswald = Oswald({ subsets: ["latin"], weight: "400" });
 
 export const MainTitle: FC<{ borderColor?: string }> = ({
   borderColor = "white",
@@ -17,8 +19,8 @@ export const MainTitle: FC<{ borderColor?: string }> = ({
   }, []);
   return (
     <Container shadow={scrollValue / 900} bgOpacitty={scrollValue / 800}>
-      <Title>Nils Fält</Title>
-      <Text>DEVELOPER</Text>
+      <Title className={oswald.className}>NILS FÄLT</Title>
+      <Text className={oswald.className}>DEVELOPER</Text>
     </Container>
   );
 };

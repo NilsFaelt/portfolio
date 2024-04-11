@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Inter, Roboto_Mono, Bungee_Spice } from "next/font/google";
 
 export const Container = styled.div<{ shadow: number; bgOpacitty: number }>`
   position: relative;
