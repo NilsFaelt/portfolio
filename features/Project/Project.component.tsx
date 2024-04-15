@@ -69,6 +69,7 @@ export const Project: FC<Props> = ({}) => {
 
       <CopyWrightContainer>
         <CopywrightStyleTextSection
+          displayMagnifyGlass={true}
           descriptionArray={[projects[project].about]}
         />
       </CopyWrightContainer>

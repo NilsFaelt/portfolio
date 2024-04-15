@@ -22,6 +22,7 @@ export const Container = styled.div`
   background-color: transparent;
   width: 100%;
 `;
+
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -142,4 +143,7 @@ export const LetterYellow = styled.span`
 `;
 export const CopyWrightContainer = styled.div`
   max-width: 70%;
+  margin-left: 1.3rem;
+  @media (max-width: 597px) {
+  }
 `;
