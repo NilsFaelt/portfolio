@@ -143,8 +143,7 @@ export const LetterYellow = styled.span`
 `;
 export const CopyWrightContainer = styled.div`
   max-width: 70%;
-  margin-left: 1.3rem;
+
   @media (max-width: 597px) {
-    margin-left: 2.5rem;
   }
 `;

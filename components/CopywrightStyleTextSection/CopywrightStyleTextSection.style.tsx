@@ -8,7 +8,7 @@ interface StyledSvgProps {
 
 export const OuterContainer = styled.div<{ magnify: string }>`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: scale(1);
@@ -19,6 +19,7 @@ export const OuterContainer = styled.div<{ magnify: string }>`
   transition: transform 1.5s;
   @media (max-width: 597px) {
     width: 10rem;
+    flex-direction: column;
   }
 `;
 export const Container = styled.div`
@@ -42,6 +43,6 @@ export const StyledSvg = styled.img<StyledSvgProps>`
   height: calc(0.5vw + 1.5rem);
 
   transition: transform 1s, opacity 1.5s;
-  transform: translateX(${(props) => props.$left}rem);
+  transform: scale(${(props) => props.$left});
   opacity: ${(props) => props.opacity};
 `;

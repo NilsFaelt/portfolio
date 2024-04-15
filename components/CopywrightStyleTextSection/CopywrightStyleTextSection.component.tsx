@@ -32,7 +32,7 @@ export const CopywrightStyleTextSection: FC<Props> = ({
       </Container>
       {displayMagnifyGlass && (
         <StyledSvg
-          $left={magnify ? "-10" : "0"}
+          $left={magnify ? "4" : "1"}
           opacity={magnify ? "0" : "1"}
           onMouseOver={() => setMagnify(true)}
           alt='magnifying glass logo'
