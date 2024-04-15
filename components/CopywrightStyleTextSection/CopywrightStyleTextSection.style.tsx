@@ -27,9 +27,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 20rem;
-  @media (max-width: 597px) {
-    margin-left: 1rem;
-  }
 `;
 
 export const Text = styled.p`
