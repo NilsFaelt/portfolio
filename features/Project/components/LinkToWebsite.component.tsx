@@ -8,7 +8,7 @@ interface Props {
 
 export const LinkToWebsite: FC<Props> = ({ href }) => {
   return (
-    <StyledHref href={href}>
+    <StyledHref href={href} target='_blank'>
       <MainText text='VISIT WEBSITE' />
     </StyledHref>
   );
