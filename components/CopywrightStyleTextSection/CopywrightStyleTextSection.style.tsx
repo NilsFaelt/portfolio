@@ -39,10 +39,10 @@ export const StyledPhoneNumber = styled.span`
   color: white;
 `;
 export const StyledSvg = styled.img<StyledSvgProps>`
+  margin-top: 0.5rem;
   width: calc(0.5vw + 1.5rem);
   height: calc(0.5vw + 1.5rem);
-
-  transition: transform 1s, opacity 1.5s;
-  transform: scale(${(props) => props.$left});
+  transition: transform 1s, opacity 1s;
+  // transform: scale(${(props) => props.$left});
   opacity: ${(props) => props.opacity};
 `;
