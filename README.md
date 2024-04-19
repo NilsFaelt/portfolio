@@ -27,3 +27,5 @@ A generic context structure is set up and ready to use, providing a simple way t
    git clone https://github.com/your-username/nextjs-base-project.git
 # base_project_next_js
 # portfolio
+
+/NILS
