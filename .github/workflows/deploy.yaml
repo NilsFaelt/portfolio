@@ -31,9 +31,9 @@ jobs:
   deploy-to-production:
     runs-on: ubuntu-latest
     needs: deploy
-    url: https://github.com/NilsFaelt/portfolio/actions/runs/12754094034/job/35547162063
     environment:
       name: test
+      url: https://github.com/NilsFaelt/portfolio/actions/runs/12754094034/job/35547162063
     steps:
       - name: Wait for approval (mock)
         run: echo "Waiting for manual approval to proceed with deployment."
