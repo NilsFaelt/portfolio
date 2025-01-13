@@ -33,6 +33,7 @@ jobs:
     needs: deploy
     environment:
       name: test
+      url: https://www.youtube.com/watch?v=5XfgT9A9PHw
     steps:
       - name: Wait for approval (mock)
         run: echo "Waiting for manual approval to proceed with deployment."
