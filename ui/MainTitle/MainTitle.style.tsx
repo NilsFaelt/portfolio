@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Inter, Roboto_Mono, Bungee_Spice } from "next/font/google";
 
 export const Container = styled.div<{ $shadow: number }>`
   position: relative;
@@ -13,6 +12,7 @@ export const Container = styled.div<{ $shadow: number }>`
   border-radius: 1rem;
   box-shadow: ${(props) => props.$shadow}rem ${(props) => props.$shadow}rem
     ${(props) => props.$shadow}rem black;
+
   background-color: rgba(0, 0, 0, 0);
 `;
 

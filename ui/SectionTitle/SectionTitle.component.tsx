@@ -5,11 +5,7 @@ interface Props {
   titleColor?: string;
   borderColor?: string;
 }
-export const SectionTitle: FC<Props> = ({
-  text,
-  titleColor = "white",
-  borderColor = "white",
-}) => {
+export const SectionTitle: FC<Props> = ({ text, titleColor = "white" }) => {
   return (
     <Text $color={titleColor} $bordercolor={titleColor}>
       {text}

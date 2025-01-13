@@ -1,11 +1,5 @@
 import React, { FC } from "react";
-import {
-  Container,
-  Title,
-  Text,
-  Span,
-  TextContainer,
-} from "./EachExperience.style";
+import { Container, TextContainer } from "./EachExperience.style";
 import { MainText } from "@/ui";
 
 interface Props {
