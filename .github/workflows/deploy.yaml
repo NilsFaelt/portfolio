@@ -36,7 +36,7 @@ jobs:
     steps:
       - name: Wait for approval (mock)
         run: echo "Waiting for manual approval to proceed with deployment."
-        run: echo ${{ secrets.TEST_SECRET }}
+          echo ${{ secrets.TEST_SECRET }}
 
   deploy-prod:
     runs-on: ubuntu-latest
