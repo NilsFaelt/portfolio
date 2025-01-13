@@ -31,6 +31,8 @@ jobs:
   await-approve:
     runs-on: ubuntu-latest
     needs: deploy
+    environment:
+      name: test
     steps:
       - name: Wait for approval (mock)
         run: echo "Waiting for manual approval to proceed with deployment."
