@@ -33,7 +33,7 @@ jobs:
     needs: deploy
     environment:
       name: test
-      url: https://www.youtube.com/watch?v=5XfgT9A9PHw
+      url: https://github.com/NilsFaelt/portfolio/actions/runs/12754094034/job/35547162063
     steps:
       - name: Wait for approval (mock)
         run: echo "Waiting for manual approval to proceed with deployment."
