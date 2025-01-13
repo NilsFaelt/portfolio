@@ -28,7 +28,7 @@ jobs:
         # If you want to actually run a simple test, you can create a mock test script, e.g.:
         # run: node -e "console.log('Running mock tests')"
 
-  await-approve:
+  deploy-to-production:
     runs-on: ubuntu-latest
     needs: deploy
     environment:
@@ -36,6 +36,7 @@ jobs:
     steps:
       - name: Wait for approval (mock)
         run: echo "Waiting for manual approval to proceed with deployment."
+        run: echo ${{ secrets.TEST_SECRET }}
 
   deploy-prod:
     runs-on: ubuntu-latest
